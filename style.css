@@ -1,0 +1,320 @@
+/* Google fonts Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter&family=Lato&family=Poppins&family=Source+Code+Pro:ital@1&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+
+    /* Google fonts Poppins */
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    ;
+
+}
+
+
+/* header start */
+
+
+#header {
+
+    width: 100%;
+    height: auto;
+
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #562EFF;
+    align-items: center;
+    justify-items: center;
+}
+
+#logo_cntrols {
+
+    width: 40px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu ul li {
+    list-style: none;
+
+
+}
+
+.menu ul li a {
+    margin: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* header end */
+
+
+
+
+/* top-players start */
+
+
+#container {
+    width: 870px;
+    margin: 0 auto;
+    /* height: 679px; */
+    background-color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+
+#top_players_all_wrapper {
+
+    position: relative;
+    top: 30px;
+
+}
+
+
+
+.top_title {
+
+    color: #562EFF;
+    position: relative;
+    left: 30px;
+
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 30px 108px;
+    margin: 30px 5px 30px 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pleyar_pic {
+    width: 56px;
+    height: 56px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.player_name {
+    font-size: 12px;
+
+}
+
+
+
+/* top-players  end */
+
+
+/* top_blog start */
+
+.top_blog {
+    margin-top: 30px;
+}
+
+
+.top_blog_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 17px;
+    margin: 30px 28px 30px 30px;
+}
+
+
+.top_blog_title {
+    font-size: 24px;
+    font-weight: 500px;
+    margin-left: 25px;
+    color: #562EFF;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_info {
+    margin-left: 15px;
+}
+
+.blog_thamnail {
+    width: 177px;
+    height: 117px;
+}
+
+.blog_title {
+    font-size: 18px;
+}
+
+.blog_athor {
+
+    font-size: 16px;
+    color: #562EFF;
+}
+
+span {
+    font-size: 14px;
+    color: gray;
+}
+
+
+/* top_blog end */
+
+
+
+/* -----------------
+    Latest Course start
+-----------------------*/
+
+
+
+#course_thamnail {
+    width: 224px;
+}
+
+
+.latest_course_item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+#latest_course_title {
+
+    font-size: 24px;
+    font-weight: 500px;
+    margin-left: 25px;
+    color: #562EFF;
+    margin-bottom: 25px;
+}
+
+
+.course_title {
+    font-size: 20px;
+}
+
+.course_athor {
+    font-size: 14px;
+    color: #ED6B4F;
+}
+
+.fa-solid.fa-star {
+    color: gold;
+}
+
+#star_color_gry {
+
+    color: gray;
+}
+
+.fa-regular.fa-clock {
+    background: #f5d1d1b2;
+    padding: 4px;
+    border-radius: 7px;
+    color: #ED6B4F;
+}
+
+#rating_point {
+    color: gray;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+/* -----------------
+    Latest Course end
+-----------------------*/
+
+
+/* ----------
+
+media query 
+
+--------*/
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+
+    .container {
+
+        width: 100%;
+    }
+
+    .players,
+    .top_blog_item,
+    .latest_course_item {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    article {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+
+
+    .players,
+    .top_blog_item,
+    .latest_course_item {
+
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .player,
+    article {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
